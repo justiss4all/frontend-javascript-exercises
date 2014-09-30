@@ -1,5 +1,15 @@
-module.exports.reversePlusOne = undefined;
+module.exports.reversePlusOne = function(array) {
+  var newArray = array.reverse(); 
+  newArray.unshift(1); 
+  return newArray; 
+};
 
-module.exports.plusesEverywhere = undefined;
+module.exports.plusesEverywhere = function(array) {
+  var newArray = array.join('+'); 
+  return newArray; 
+};
 
-module.exports.arrayQuantityPlusOne = undefined;
+module.exports.arrayQuantityPlusOne = function(array) {
+  var plusOne = array.length + 1; 
+  return plusOne; 
+};
